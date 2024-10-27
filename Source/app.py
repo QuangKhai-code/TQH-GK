@@ -82,7 +82,7 @@ st.markdown("""
 # Enable dark theme for Altair charts
 alt.themes.enable("dark")
 
-DATAPATH = "data_run/country_comparison_large_dataset_vn.csv"
+DATAPATH = os.path.join(os.path.dirname(__file__), 'data', 'your_data_file.csv')
 df = pd.read_csv(DATAPATH)
 
 with st.sidebar:
